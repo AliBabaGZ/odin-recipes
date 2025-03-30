@@ -1,0 +1,104 @@
+/* Universal selector to reset default margins/paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the entire body */
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Type selector for all h1 tags */
+h1 {
+    background-color: rgb(82, 82, 222);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellowgreen;
+}
+
+/* Centering the image and setting its width */
+.index-page img {
+    display: block;
+    margin: 20px auto; /* Center image and add space around it */
+    width: 50%; /* Adjust this to the desired width */
+}
+/* Type selector for all h3 tags */
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Class selector for .top-dishes */
+.top-dishes {
+    text-decoration: underline;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Class selector for the index-list container */
+.index-list {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Descendant combinator: style for ul inside index-list */
+.index-list > ul {
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+    list-style-position: inside;
+    background-color: red;
+    margin: 10px;
+}
+
+/* Chaining selectors for links inside index-list */
+.index-list a {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Hover effect for links inside index-list */
+.index-list a:hover {
+    color: black;
+}
+
+p {
+    color: #333; /* Dark grey text */
+    font-size: 16px;
+    margin: 20px;
+    text-align: center; /* If you still want to ensure this */
+}
+
+/* ID selector for unique styling of #highlight section */
+#highlight {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Specificity example: override default paragraph color inside #highlight */
+#highlight p {
+    color: red;
+}
+
+/* Another class selector for the special feature section */
+.special-feature {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.special-feature {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.special-feature > ul {
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+    list-style-position: inside;
+    background-color: red; /* Adjust background color if needed */
+}

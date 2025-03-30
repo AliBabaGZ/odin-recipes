@@ -3,19 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Classic British Dishes</title>
   </head>
-  <body>
-    <h1>Classic British Recipes!</h1>
+  <body class="index-page">
+    <!-- Type selector applied to h1 -->
+    <h1 class="main-header">Classic British Recipes!</h1>
+
+    <!-- Inherited font-family from body and custom background color -->
     <img
       src="./images/British-Cooking.jpg"
       alt="A picture of a roast dinner with a little union jack flag stuck in the yorkshire pudding"
     />
-    <h3>Here are my top 3 British dishes!</h3>
-    <ul>
-      <li><a href="./recipies/bangers-mash.html">Bangers and Mash</a></li>
-      <li><a href="./recipies/shepherd-pie.html">Shepherd's Pie</a></li>
-      <li><a href="./recipies/toad-in-hole.html">Toad in the Hole</a></li>
-    </ul>
+
+    <!-- Class selector for top-dishes h3 -->
+    <h3 class="top-dishes">Here are my top 3 British dishes!</h3>
+
+    <div class="index-list">
+      <ul>
+        <!-- Descendant selector (li inside .index-list) -->
+        <li><a href="./recipies/bangers-mash.html">Bangers and Mash</a></li>
+        <li><a href="./recipies/shepherd-pie.html">Shepherd's Pie</a></li>
+        <li><a href="./recipies/toad-in-hole.html">Toad in the Hole</a></li>
+      </ul>
+    </div>
+
+    <!-- Example of a paragraph where inherited styles will apply -->
+    <p>This is a paragraph with a style inherited from the body.</p>
+
+    <!-- Example of an ID selector used in a unique section -->
+    <section id="highlight">
+      <h2 class="section-title">Special Feature</h2>
+      <p>
+        This section has a unique color for the text based on its ID selector.
+      </p>
+    </section>
+
+    <!-- Another class example with nested elements -->
+    <div class="special-feature">
+      <h2>Discover the Flavors</h2>
+      <p>
+        This feature uses a specific class for targeting and custom styling.
+      </p>
+      <ul>
+        <li>Classic Stews</li>
+        <li>Traditional Pies</li>
+        <li>Sunday Roasts</li>
+      </ul>
+    </div>
   </body>
 </html>
