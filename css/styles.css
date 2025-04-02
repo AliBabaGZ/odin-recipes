@@ -1,29 +1,30 @@
+/* ===== Global Styles (Shared Across All Pages) ===== */
 /* Universal selector to reset default margins/paddings */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} */
+
+img {
+  display: block;
+  margin: 20px auto; /* Center image and add space around it */
+  width: 50%;
 }
 
+/* ===== Index Page Styles ===== */
 /* Center the entire body */
-body {
+.index-page {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(152, 91, 152);
 }
 
 /* Type selector for all h1 tags */
-h1 {
+.index-page h1 {
   background-color: rgb(82, 82, 222);
   text-align: center;
   color: yellowgreen;
-}
-
-/* Centering the image and setting its width */
-.index-page img {
-  display: block;
-  margin: 20px auto; /* Center image and add space around it */
-  width: 50%;
 }
 
 /* Class selector for .top-dishes */
@@ -76,9 +77,58 @@ h1 {
 
 .discover > ul {
   display: inline-block;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   list-style-position: inside;
   background-color: red;
   margin: 10px;
+}
+
+/* ===== Bangers and Mash Page Styles ===== */
+
+.bangers-page {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(97, 156, 41);
+}
+
+.bangers-page p {
+  color: white;
+}
+
+.bangers-header {
+  background-color: rgb(170, 188, 27);
+  text-align: center;
+  color: rgb(23, 17, 149);
+}
+
+.best-sausages {
+  color: aliceblue;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.what-you-need {
+  color: pink;
+  margin-top: 10px;
+}
+
+.requirment-list {
+  list-style-position: inside; /* Keeps bullets inside the list */
+}
+
+.requirment-list li {
+  margin: 5px;
+}
+
+/* .instruction-list {
+  list-style-position: inside;
+} */
+
+.instruction-list li {
+  margin: 5px;
+}
+
+.how-to-serve {
+  margin-bottom: 10px;
 }
